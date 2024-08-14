@@ -22,6 +22,9 @@ public class SliderDemo implements ChangeListener {
         panel.add(label);
         frame.add(panel);
 
+        frame.setSize(420,420);
+        frame.setVisible(true);
+
     }
 
 
