@@ -29,12 +29,15 @@ public class SliderDemo implements ChangeListener {
         slider.setPaintLabels(true);
         slider.setFont(new Font("MV Boli",Font.PLAIN,15));
 
+        slider.setOrientation(SwingConstants.VERTICAL);
+
         panel.add(slider);
         panel.add(label);
         frame.add(panel);
 
         frame.setSize(420,420);
         frame.setVisible(true);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
 
