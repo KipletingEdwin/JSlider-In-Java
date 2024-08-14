@@ -13,10 +13,14 @@ public class SliderDemo implements ChangeListener {
 
 
     SliderDemo(){
-        frame = new JFrame();
+        frame = new JFrame("Slider Demo");
         panel = new JPanel();
         label = new JLabel();
-        slider = new JSlider();
+        slider = new JSlider(0,100,50);
+
+        panel.add(slider);
+        panel.add(label);
+        frame.add(panel);
 
     }
 
