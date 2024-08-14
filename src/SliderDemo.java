@@ -31,6 +31,11 @@ public class SliderDemo implements ChangeListener {
 
         slider.setOrientation(SwingConstants.VERTICAL);
 
+        label.setText("°C = "+ slider.getValue());
+
+        slider.addChangeListener(this);
+        label.setFont(new Font("MV Boli",Font.PLAIN,25));
+
         panel.add(slider);
         panel.add(label);
         frame.add(panel);
@@ -44,6 +49,7 @@ public class SliderDemo implements ChangeListener {
 
     @Override
     public void stateChanged(ChangeEvent e) {
+        label.setText("°C = "+ slider.getValue());
 
     }
 }
